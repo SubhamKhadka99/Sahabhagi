@@ -472,6 +472,14 @@ async function seedFirestoreFromMemory({ force = false } = {}) {
 
 // ── Express setup ─────────────────────────────────────────────────────────────
 const app  = express();
+// Trust the platform's reverse proxy (Railway/Render/Vercel all sit in front
+// of this process). Railway forwards the real client IP via X-Forwarded-For;
+// without this, Express treats every request as coming from Railway's own
+// internal proxy IP, so express-rate-limit can't distinguish users — one
+// person tripping a limit blocks everyone. "1" trusts exactly one hop (the
+// platform's proxy), not the whole chain, so a client can't spoof their own
+// IP by setting the header themselves.
+app.set("trust proxy", 1);
 const PORT = process.env.PORT ?? 3001;
 const IS_PROD = process.env.NODE_ENV === "production";
 
