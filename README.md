@@ -1,6 +1,6 @@
 # Sahabhagi (सहभागी) — Civic Hazard Reporting Platform
 
-A Progressive Web App connecting citizens reporting urban hazards (blocked drains, potholes, waste dumping) to KMC Ward 10 officials via a live density-weighted heatmap and dispatch dashboard.
+A Progressive Web App connecting citizens reporting urban hazards (blocked drains, potholes, waste dumping) to KMC Ward officials via a live density-weighted heatmap and dispatch dashboard.
 
 **Live demo:** https://sahabaghi.org
 
