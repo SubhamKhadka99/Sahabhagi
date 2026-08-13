@@ -571,7 +571,7 @@ export default function LandingPage() {
               <span className="p-eyebrow">For wards & partners</span>
               <h3>Talk to us about your ward</h3>
               <p>For Ward Chairmen, officers, INGOs, and CSR partners exploring what this looks like for a specific ward.</p>
-              <a href="#top" className="btn btn-cyan" style={{ width: "100%", justifyContent: "center" }}>Start a conversation →</a>
+              <a href="mailto:info@sahabhagi.org" className="btn btn-cyan" style={{ width: "100%", justifyContent: "center" }}>Start a conversation →</a>
             </div>
           </div>
         </div>
@@ -596,6 +596,10 @@ export default function LandingPage() {
                 <a onClick={() => navigate("/login")}>Open the app</a>
                 <a onClick={() => navigate("/login")}>Sign in</a>
                 <a onClick={() => navigate("/login")}>Create account</a>
+              </div>
+              <div className="footer-col">
+                <h5>Contact</h5>
+                <a href="mailto:info@sahabhagi.org">info@sahabhagi.org</a>
               </div>
             </div>
           </div>
