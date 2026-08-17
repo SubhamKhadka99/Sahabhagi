@@ -2,7 +2,7 @@
 
 A Progressive Web App connecting citizens reporting urban hazards (blocked drains, potholes, waste dumping) to KMC Ward officials via a live density-weighted heatmap and dispatch dashboard.
 
-**Live demo:** https://sahabaghi.org
+**Live demo:** https://sahabhagi.org
 
 ---
 
